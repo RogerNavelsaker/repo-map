@@ -1,0 +1,38 @@
+{
+  "name": "@rogernavelsaker/repo-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lightweight repository mapper for Rust and TypeScript codebases",
+  "type": "module",
+  "packageManager": "bun@1.3.10",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RogerNavelsaker/repo-map.git"
+  },
+  "homepage": "https://github.com/RogerNavelsaker/repo-map#readme",
+  "bugs": {
+    "url": "https://github.com/RogerNavelsaker/repo-map/issues"
+  },
+  "keywords": [
+    "bun",
+    "cli",
+    "repo-map",
+    "typescript",
+    "rust",
+    "code-intel"
+  ],
+  "bin": {
+    "repo-map": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "bun --eval \"JSON.parse(await Bun.file('package.json').text()); console.log('package.json ok')\""
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.10"
+  }
+}
